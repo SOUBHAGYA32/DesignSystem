@@ -23,11 +23,6 @@ let package = Package(
                 .process("Resources")
             ]
         ),
-        .executableTarget(
-            name: "ExampleApp",
-            dependencies: ["DesignSystem"],
-            path: "Examples/ExampleApp"
-        ),
         .testTarget(
             name: "DesignSystemTests",
             dependencies: ["DesignSystem"],
