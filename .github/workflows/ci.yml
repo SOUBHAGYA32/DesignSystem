@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Swift toolchain
+        run: swift --version
+      - name: Build package
+        run: swift build --product DesignSystem
+      - name: Run tests
+        run: swift test

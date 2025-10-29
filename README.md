@@ -10,7 +10,7 @@ Overview
 - Includes example app target to demonstrate usage.
 
 Quick start (SPM)
-1. In Xcode: File > Add Packages... and paste the repository URL (e.g. https://github.com/your-username/DesignSystem).
+1. In Xcode: File > Add Packages... and paste the repository URL https://github.com/SOUBHAGYA32/DesignSystem.git.
 2. Add `DesignSystem` product to your app target.
 3. In code:
 ```swift
